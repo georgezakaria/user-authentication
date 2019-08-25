@@ -1,0 +1,74 @@
+<%- include('header'); -%>
+<div class="wrapper">
+  <div class="inner">
+    <div class="image-holder">
+      <img src="assets/images/registration-form-4.jpg" alt="" />
+    </div>
+    <form action="/signup" method="POST">
+      <h3>Sign Up</h3>
+      <div class="form-holder active">
+        <input
+          type="text"
+          name="fname"
+          placeholder="First Name"
+          class="form-control"
+        />
+      </div>
+      <div class="form-holder active">
+        <input
+          type="text"
+          name="lname"
+          placeholder="Last Name"
+          class="form-control"
+        />
+      </div>
+      <div class="form-holder active">
+        <input
+          type="text"
+          name="username"
+          placeholder="Username"
+          class="form-control"
+        />
+      </div>
+      <div class="form-holder">
+        <input
+          type="text"
+          name="email"
+          placeholder="Email"
+          class="form-control"
+        />
+      </div>
+      <div class="form-holder">
+        <input
+          type="password"
+          name="pass"
+          placeholder="Password"
+          class="form-control"
+          style="font-size: 15px;"
+        />
+      </div>
+      <div class="form-holder">
+        <input
+          type="password"
+          name="re_pass"
+          placeholder="Confirm Password"
+          class="form-control"
+          style="font-size: 15px;"
+        />
+      </div>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" checked /> I agree all statement in
+          <a href="#">Terms & Conditions</a>
+          <span class="checkmark"></span>
+        </label>
+      </div>
+      <div class="form-login">
+        <button>Sign up</button>
+        <p>Already Have account? <a href="#">Login</a></p>
+      </div>
+      <input type="hidden" name="action" value="register" />
+    </form>
+  </div>
+</div>
+<%- include('footer'); -%>
